@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E35B5B">
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choicesRadioGroup"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="71dp"
+        android:layout_toStartOf="@+id/backButton"
+        android:text="Submit"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/questionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#CCCCCC"
+        android:textStyle="bold"
+        android:hint="Enter question" />
+
+    <EditText
+        android:id="@+id/choice1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionEditText"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#CCCCCC"
+        android:textStyle="bold"
+        android:hint="Choice 1" />
+
+    <EditText
+        android:id="@+id/choice2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice1EditText"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#CCCCCC"
+        android:textStyle="bold"
+        android:hint="Choice 2" />
+
+    <EditText
+        android:id="@+id/choice3EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice2EditText"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#CCCCCC"
+        android:textStyle="bold"
+        android:hint="Choice 3" />
+
+    <EditText
+        android:id="@+id/choice4EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice3EditText"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#CCCCCC"
+        android:textStyle="bold"
+        android:hint="Choice 4" />
+
+    <TextView
+        android:id="@+id/choiceHintTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice4EditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:text="Please choose the correct choice"
+        android:textSize="18sp"
+        android:textColor="#CCCCCC" />
+
+    <RadioGroup
+        android:id="@+id/choicesRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choiceHintTextView"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/choice1RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Choice 1" />
+
+        <RadioButton
+            android:id="@+id/choice2RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Choice 2" />
+
+        <RadioButton
+            android:id="@+id/choice3RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Choice 3" />
+
+        <RadioButton
+            android:id="@+id/choice4RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choice 4"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choicesRadioGroup"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="56dp"
+        android:text="Main Menu"
+        android:textStyle="bold" />
+
+</RelativeLayout>
